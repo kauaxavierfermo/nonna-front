@@ -6,6 +6,29 @@ body {
     font-family: Arial, sans-serif;
     color:#b61a1a;
 }
+nav {
+    background-color: #8B3A3A;
+color: #FFF8E7;
+display: flex;
+justify-content: space-between;
+
+}
+nav > a{
+    font-family: georgia, serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+nav a {
+    color: #FFF8E7;
+    text-decoration: none;
+}
+
+.links-nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
 footer {
     background-color:#b61a1a;
     color:#b61a1a;
@@ -13,6 +36,34 @@ footer {
     font-size:14px;
     text-align:center;
 }
+
+footer > div {
+display:flex;
+gap: 24px;
+padding-left: 24px;
+padding-right: 24px;
+
+
+}
+
+footer section{
+    flex-grow: 1;
+}
+
+footer iframe {
+    width: 100%;
+}
+
+footer > p {
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+
 
 
 
