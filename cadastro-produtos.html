@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de produtos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">cantina da nonna</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cardapio.html">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/reserva.html">Link</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro-produtos.html">Link</a>
+                    </li>
+
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/cadastrado-produtos.html">cadastro de
+                            produtos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <main>
+        <h1>cadastro de produtos</h1>
+        <p>Formulario para cadastrar produtos no cardapio </p>
+
+
+        <form>
+
+            <div class="row">
+
+                <div class="col-md-3 col-sm-12 mb-3">
+
+                    <label for="nome-produto" class="form-label">nome do produto</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1"
+                        aria-describedby="nome-produto-help">
+                    <div id="nome-produto-help" class="form-text">Nome do produto a ser cadastrado.</div>
+                </div>
+                <div class="col-md-3 col-sm-12 mb-3">
+                    <label for="descricao-produto" class="form-label">descrição</label>
+                    <input type="descricao-produto-help" class="form-text" id="descricao-produto"
+                        aria-activedescendant="descricao">
+                    <div id="descricao-produto-help" class="form-text">descrição do produto a ser cadastrado</div>
+                </div>
+
+            </div>
+            <div class="col-md-3 col-sm-12 mb-3">
+                <label for="valor-produto" class="form-label">valor</label>
+                <input type="number" class="form-label" id="valor-produto" aria-describedby="valor-produto-help">
+                <div id="valor-produto-help" class="form-text">valor do produto em reais a ser cadastrado</div>
+            </div>
+            <div class="row">
+                <div class="mb-3">
+                    <label for="imagem-produto" class="form label">Imagem:</label>
+                    <input class="form-control" type="file" id="imagem-produto" aria-describedby="imagem-produto-help">
+                    <div id="imagem-produto-help" class="form-text">imagem de produto a ser cadastrado</div>
+
+
+                </div>
+                <div class="col-md-4 col-sm-12 mb-3">
+                    <label for="catergoria-produto" class="form-label">categoria:</label>
+                    <select class="form-select" id="categoria-produto" aria-label="Default select example"
+                        aria-describedby="categoria-produto-help">
+
+                        <option selected>Open this select menu</option>
+                        <option value="1">massas</option>
+                        <option value="2">pizzas</option>
+                        <option value="3">entradas</option>
+                        <option value="2">bebidas</option>
+                        <option value="3">sobremesas</option>
+
+
+
+                    </select>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </main>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>

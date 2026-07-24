@@ -1,39 +1,42 @@
-h1 { color: #b61a1a;
+h1 {
+    color: #b61a1a;
     font-family: Georgia, serif;
 
-        }
+}
+
 body {
     font-family: Arial, sans-serif;
-    color:#b61a1a;
+    color: #b61a1a;
 
 
 
-max-width: 1100px;
- 
-margin:0 auto;
-padding-left: 24px;
-padding-right:24px
+    max-width: 1100px;
 
-
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px
 }
+
 nav {
     background-color: #8B3A3A;
-color: #FFF8E7;
-display: flex;
-justify-content: space-between;
+    color: #FFF8E7;
+    display: flex;
+    justify-content: space-between;
 
-position: sticky;
-top:0;
-margin-top:0;
-gap:16px;
+    position: sticky;
+    top: 0;
+    margin-top: 0;
+    gap: 16px;
 
-padding: 16px 24px;
+    padding: 16px 24px;
 }
-nav > a{
+
+nav>a {
     font-family: georgia, serif;
     font-size: 24px;
     font-weight: bold;
 }
+
 nav a {
     color: #FFF8E7;
     text-decoration: none;
@@ -46,23 +49,23 @@ nav a {
 }
 
 footer {
-    background-color:#b61a1a;
-    color:#b61a1a;
+    background-color: #b61a1a;
+    color: #b61a1a;
     font-family: Georgia, serif;
-    font-size:14px;
-    text-align:center;
+    font-size: 14px;
+    text-align: center;
 }
 
-footer > div {
-display:flex;
-gap: 24px;
-padding-left: 24px;
-padding-right: 24px;
+footer>div {
+    display: flex;
+    gap: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
 
 
 }
 
-footer section{
+footer section {
     flex-grow: 1;
 }
 
@@ -70,7 +73,7 @@ footer iframe {
     width: 100%;
 }
 
-footer > p {
+footer>p {
     text-align: center;
 }
 
@@ -82,87 +85,42 @@ footer > p {
 
 input:focus,
 select:focus,
-textarea:focus{
+textarea:focus {
     background-color: #FDEBD3;
 }
 
 
 
 
-.botao-reserva{
+.botao-reserva {
 
- color:  #FFF8E7;
- text-decoration:none;
-
-
- border-radius:4px;
- background-color:#883A3A;
- padding:12px 16px;
+    color: #FFF8E7;
+    text-decoration: none;
 
 
- position:fixed;
- right: 24px;
- bottom:24px;
- 
- z-index:1;
+    border-radius: 4px;
+    background-color: #883A3A;
+    padding: 12px 16px;
+
+
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+
+    z-index: 1;
 
 }
 
-.botao-reserva:hover{
+.botao-reserva:hover {
     background-color: #000000;
     transform: scale(1.1);
 
-    
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.cardapio-img {
+    height: 110px;
+    width: 130px;
+    object-fit: cover;
+    flex-shrink: 0;
+}

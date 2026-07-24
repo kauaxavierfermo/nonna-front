@@ -1,137 +1,180 @@
 <!DOCTYPE html>
 <html "lang"="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>cantinho da nona</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-     rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="public/style/index.css">
 </head>
+
 <body>
-         <nav>
-        <a href="index.html"> cantina da nonna </a>
-<div class="links-nav">
-        <a href="index.html">Início</a>
-        <a href="cardapio.html">Cardápio</a>
-        <a href="reserva.html">Reserva</a>
-        <a href="cadastro-produtos.html">Cadastro de produtos</a>
-</div>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">cantina da nonna</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cardapio.html">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/reserva.html">Link</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro-produtos.html">Link</a>
+                    </li>
+
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/cadastrado-produtos.html">cadastro de
+                            produtos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-<h1> reserva de mesa </h1>
-<P>preencha os dados abaixo para simular uma reserva na cantina da nonna.</P>
-
-<form>
-    <fieldset>
-        <legend>dados do cliente</legend>
-
-<p>
-    <label for="nome">nome completo:</label>
-<br>
-<input type="text" id="nome" name="nome" placeholder="ex.: maria silva " required minlength="3">
-</p>
-
-
-<p>
-    <label for="email">e-mail:</label>
-<br>
-<input type="text" id="email" name="email" placeholder="ex.: maria@gmail.com" >
-</p>
 
 
 
-<p>
-    <label for="telefone">telefone:</label>
-<br>
-<input type="text" id="telefone " name="telefone " placeholder="ex.: (48) 98765-321 ">
-</p>
+    <nav>
+        <a href="index.html"> cantina da nonna </a>
+        <div class="links-nav">
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="reserva.html">Reserva</a>
+            <a href="cadastro-produtos.html">Cadastro de produtos</a>
+        </div>
+    </nav>
+    <h1> reserva de mesa </h1>
+    <P>preencha os dados abaixo para simular uma reserva na cantina da nonna.</P>
+
+    <form>
+        <fieldset>
+            <legend>dados do cliente</legend>
+
+            <p>
+                <label for="nome">nome completo:</label>
+                <br>
+                <input type="text" id="nome" name="nome" placeholder="ex.: maria silva " required minlength="3">
+            </p>
+
+
+            <p>
+                <label for="email">e-mail:</label>
+                <br>
+                <input type="text" id="email" name="email" placeholder="ex.: maria@gmail.com">
+            </p>
 
 
 
-
-
-
-
-
-    </fieldset>
-
-<fieldset>
-    
-
-
-    
-    <p>
-<label for="data">data da reserva:</label><br>
-<input type="date" id="data " name="data " required>
-</p>
-
-<p>
-<label for="horario">horário:</label><br>
-<input type="time" id="horario" name="horario" required>
-</p>
-
-<p>
-<label for="pessoas">quantidade de pessoas:</label><br>
-<input type="number" id="pessoas " name="pessoas "  placeholder="ex.: 4" required min="1" max="20">
-</p>
-
-
-
-<P>Área desejada:</P>
-<input type="radio" id="area-interna" name="area" value="interna" required>
-<label for="area-interna">Área interna</label> <br>
-
-<input type="radio" id="area-externa" name="area" value="externa" required>
-<label for="area-externa">Área externa</label> <br>
-
-
-<input type="radio" id="area-indiferente " name="area" value="indiferente" required>
-<label for="area-indiferente">Área indiferente</label> <br>
+            <p>
+                <label for="telefone">telefone:</label>
+                <br>
+                <input type="text" id="telefone " name="telefone " placeholder="ex.: (48) 98765-321 ">
+            </p>
 
 
 
 
-<P>preferências:</P>
-<input type="checkbox" id="cadeirao" name="preferencia" value="cadeirao" required>
-<label for="cadeirao">preciso de cadeirão infantil </label> <br>
-
-<input type="checkbox" id="aniversario" name="preferencias" value="aniversario" required>
-<label for="aniversario">é uma comemoração de aniversário</label> <br>
 
 
-<input type="checkbox" id="acessibilidade " name="preferencias" value="acessibilidade" required>
-<label for="acessibilidade">preciso de acessibilidade</label> <br>
-
-<P>
-    <label for="observacoes">observações:</label><br>
-    <textarea id="observacoes" name="observacoes" rows="4" cols="40" placeholder="ex.: mesa perto da janela"></textarea>
-</P>
 
 
-</fieldset>
+        </fieldset>
 
-<p>
-    <input type="checkbox" id="confirmacao" name="confirmacao" required>
-
-<Label for="confirmacao">comfirmo que os dados de reservas estão corretos </Label>
+        <fieldset>
 
 
-</p>
 
-<button type="submit">enviar reserva</button>
 
-<button type="reset">limpar formulário</button>
-</form>
-<a class="botao-reserva" href="reserva.html"> reservar mesa </a>
-<footer>
-    <h2>localização</h2>
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27931.281858797556!2d-49.485406557189116!3d-28.
-94555449317841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1784248557098!5m2!1spt-BR!2sbr" width="600"
- height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-<P>&copy; 2026 cantina da nonna</P>
+            <p>
+                <label for="data">data da reserva:</label><br>
+                <input type="date" id="data " name="data " required>
+            </p>
 
-</footer>
- 
+            <p>
+                <label for="horario">horário:</label><br>
+                <input type="time" id="horario" name="horario" required>
+            </p>
+
+            <p>
+                <label for="pessoas">quantidade de pessoas:</label><br>
+                <input type="number" id="pessoas " name="pessoas " placeholder="ex.: 4" required min="1" max="20">
+            </p>
+
+
+
+            <P>Área desejada:</P>
+            <input type="radio" id="area-interna" name="area" value="interna" required>
+            <label for="area-interna">Área interna</label> <br>
+
+            <input type="radio" id="area-externa" name="area" value="externa" required>
+            <label for="area-externa">Área externa</label> <br>
+
+
+            <input type="radio" id="area-indiferente " name="area" value="indiferente" required>
+            <label for="area-indiferente">Área indiferente</label> <br>
+
+
+
+
+            <P>preferências:</P>
+            <input type="checkbox" id="cadeirao" name="preferencia" value="cadeirao" required>
+            <label for="cadeirao">preciso de cadeirão infantil </label> <br>
+
+            <input type="checkbox" id="aniversario" name="preferencias" value="aniversario" required>
+            <label for="aniversario">é uma comemoração de aniversário</label> <br>
+
+
+            <input type="checkbox" id="acessibilidade " name="preferencias" value="acessibilidade" required>
+            <label for="acessibilidade">preciso de acessibilidade</label> <br>
+
+            <P>
+                <label for="observacoes">observações:</label><br>
+                <textarea id="observacoes" name="observacoes" rows="4" cols="40"
+                    placeholder="ex.: mesa perto da janela"></textarea>
+            </P>
+
+
+        </fieldset>
+
+        <p>
+            <input type="checkbox" id="confirmacao" name="confirmacao" required>
+
+            <Label for="confirmacao">comfirmo que os dados de reservas estão corretos </Label>
+
+
+        </p>
+
+        <button type="submit">enviar reserva</button>
+
+        <button type="reset">limpar formulário</button>
+    </form>
+    <a class="botao-reserva" href="reserva.html"> reservar mesa </a>
+    <footer>
+        <h2>localização</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27931.281858797556!2d-49.485406557189116!3d-28.
+94555449317841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1784248557098!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <P>&copy; 2026 cantina da nonna</P>
+
+    </footer>
+
 
 
 
@@ -140,17 +183,5 @@
 
 
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
