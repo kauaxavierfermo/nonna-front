@@ -39,17 +39,18 @@
         </div>
     </nav>
 
-    <main class="container mt-4">
+ <main class="container mt-4">
         <h1>Cardápio</h1>
 
         <div class="d-flex mb-4 gap-2" id="filtro">
             <button class="btn btn-small btn btn-outline-secondary" data-filtro="todos">Todos</button>
             <button class="btn btn-small btn btn-outline-secondary" data-filtro="massas">Massas</button>
             <button class="btn btn-small btn btn-outline-secondary" data-filtro="pizzas">Pizzas</button>
-
+            <button class="btn btn-small btn btn-outline-secondary" data-filtro="vinhos">Vinhos</button>
+            <button class="btn btn-small btn btn-outline-secondary" data-filtro="entradas">Entradas</button>
         </div>
 
-        <div class="row">
+        <div class="row" id="cardapio">
 
             <div class="col-md-3 col-md-6 col-sm-12 mb-4 h-100 prato" data-categoria="massas">
                 <div class="border rounded p-3 h-100 d-flex flex-column">
@@ -94,10 +95,39 @@
                 </div>
             </div>
 
+            <div class="col-md-3 col-md-6 col-sm-12 mb-4 h-100 prato" data-categoria="entradas">
+                <div class="border rounded p-3 h-100 d-flex flex-column">
+                    <div class="d-flex justify-content-between align-items-start gap-3">
+                        <div>
+                            <h5>Salame e Queijo Colonial</h5>
+                            <p class="text-muted small"></p>
+                        </div>
+                        <img src="Public/imagens/Queijocolonial_Salame.webp" alt="Salame e Queijo Colonial"
+                            class="cardapio-img rounded">
+                    </div>
+                    <p class="mt-auto  mb-0 pt-3">R$ 40,00</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-md-6 col-sm-12 mb-4 h-100 prato" data-categoria="vinhos">
+                <div class="border rounded p-3 h-100 d-flex flex-column">
+                    <div class="d-flex justify-content-between align-items-start gap-3">
+                        <div>
+                            <h5>Vinho Goethe (taça)</h5>
+                            <p class="text-muted small"></p>
+                        </div>
+                        <img src="Public/imagens/Vinho_Goethe.webp" alt="Vinho Goethe (taça)"
+                            class="cardapio-img rounded">
+                    </div>
+                    <p class="mt-auto  mb-0 pt-3">R$ 55,00</p>
+                </div>
+            </div>
+
         </div>
 
     </main>
-    <a class="botao-reserva" href="reserva.html">Reservar mesa</a>
+
+    <a class="botao-cadastro-produto" onClick="mostrarCadastroProdutos()">Criar Produto</a>
 
     <footer>
         <div>
@@ -124,7 +154,7 @@
         </div>
     </footer>
 
-    <script src="Public/scripts/cardapio.js"></script>
+    <script src="public/scripts/cardapio.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK" crossorigin="anonymous"></script>
 
