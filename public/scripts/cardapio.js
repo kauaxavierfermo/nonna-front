@@ -25,33 +25,43 @@ function carregarFiltro() {
 }
 
 async function apagarProduto(id) {
-try {const result = await fetch('http://localhost:8080/produtos/${id}', {
-method: 'DELETE'
-headers: {
-'Accept': 'application/json'
-}})}
-}
-if (!result.status != 240) {
-    const resultado = await result.json();
-    alert(resutado.erro);
-    return;
-}
-}catch(error) {
-    console.log(error);
-}
-elementoBotaoCancelar.hidden = False;
-elementoBotaoComfirmar.hidden = false;
-elementoBotaoImagemRecarregar.hidden = true;
-elementoBotaoCancelar.click();
-carregarCardapio();
+    const elementoBotaoCancelar = document.querySelector("#apagarProdutoModalCancelar");
+    const elementoBotaoComfirmar = document.querySelector("#apagarProdutoModalConfirmar");
+    const elementoBotaoImagemRecarregar = document.querySelector("#apagarProdutoModalBotaoRecarregar");
+
+    elementoBotaoCancelar.hidden = true;
+    elementoBotaoComfirmar.hidden = true;
+    elementoBotaoImagemRecarregar.hidden = false;
+
+    try {
+        const resultado = await fetch('http://localhost:8080/produtos/${id}', {
+            method: 'DELETE',
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        if (!resultado.status != 204) {
+            const resultado = await resultado.json();
+            alert(resultado.erro);
+            return;
+        }
+    } catch (error) {
+        console.log(error);
+    }
+    elementoBotaoCancelar.hidden = false;
+    elementoBotaoComfirmar.hidden = false;
+    elementoBotaoImagemRecarregar.hidden = true;
+    elementoBotaoCancelar.click();
+    carregarCardapio();
 }
 
 function popularModalApagarProduto(id, nome) {
-const elementoTitulo = document.querySelector("#apagarProdutoModalLabel");
-elementoTitulo.innerHTML = `Apagar produto: ${nome}`;
-const elementoCorpo = document.querySelector("#apagarProdutoModalCorpo");
-elementoCorpo.innerHTML = `Tem certeza que deseja apagar o produto "${nome}" do cardápio?` const elementoBotaoApagar = document.querySelector("#apagarProdutoModalBotao");
-elementoBotao.addEventListener("click", (id) =>{apagarProduto(id)});
+    const elementoTitulo = document.querySelector("#apagarProdutoModalLabel");
+    elementoTitulo.innerHTML = `Apagar produto: ${nome}`;
+    const elementoCorpo = document.querySelector("#apagarProdutoModalCorpo");
+    elementoCorpo.innerHTML = `Tem certeza que deseja apagar o produto "${nome}" do cardápio?`;
+    const elementoBotaoApagar = document.querySelector("#apagarProdutoModalConfirmar");
+    elementoBotaoApagar.addEventListener("click", (id) => { apagarProduto(id) });
 
 }
 
